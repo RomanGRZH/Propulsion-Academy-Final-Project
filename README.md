@@ -2,7 +2,7 @@
 
 
 This repository contains the complete Propulsion Academy final project on ultrasound image segmentation.
-The project was done in collaboration with [Aison Technologies](https://www.caressoma.com) (former Caressoma).
+The project was done in collaboration with our industry partner.
 
 ## Authors
 [Leticia Fernandez Moguel](https://www.linkedin.com/in/leticia-fernandez-moguel-phd/),  [Roman Grisch](https://www.linkedin.com/in/romangrisch/), [Nicolas Bernath](https://www.linkedin.com/in/nicolasbernath/) 
