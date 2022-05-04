@@ -1,4 +1,4 @@
-name: aison_technologies
+name: venv_propulsion
 channels:
   - conda-forge
   - defaults
