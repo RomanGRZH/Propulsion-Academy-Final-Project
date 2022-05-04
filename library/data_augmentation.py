@@ -53,13 +53,13 @@ def augment_data(images, masks, save_path, augment=True):
     W = 256
 
     for x, y in tqdm(zip(images, masks), total=len(images)):
-        name = x.split("/")[-1].split(".")
+        name = x.replace('\\', '/').split("/")[-1].split(".")
 
         """ Extracting the name and extension of the image and the mask. """
         image_name = name[0]
         image_extn = name[1]
 
-        name = y.split("/")[-1].split(".")
+        name = y.replace('\\', '/').split("/")[-1].split(".")
         mask_name = name[0]
         mask_extn = name[1]
 
@@ -120,10 +120,8 @@ def augment_data(images, masks, save_path, augment=True):
             else:
                 tmp_img_name = f"{image_name}_{idx}.{image_extn}"
                 tmp_mask_name = f"{mask_name}_{idx}.{mask_extn}"
-
             image_path = os.path.join(save_path, "images", tmp_img_name)
             mask_path = os.path.join(save_path, "masks", tmp_mask_name)
-
             cv2.imwrite(image_path, i)
             cv2.imwrite(mask_path, m)
 
